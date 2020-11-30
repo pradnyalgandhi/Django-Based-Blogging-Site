@@ -14,7 +14,7 @@ from pathlib import Path
 import os
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
-BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+BASE_DIR = Path(__file__).resolve().parent.parent
 
 
 # Quick-start development settings - unsuitable for production
@@ -26,7 +26,7 @@ SECRET_KEY = 'toph7i-jvn3k=-y758glh##uxood^^m*l*08c-#3!-nah-h&s5'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['pradnyalblog.herokuapp.com']
+ALLOWED_HOSTS = ['pradnyalblog.herokuapp.com','127.0.0.1']
 
 
 # Application definition
